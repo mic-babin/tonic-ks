@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import "variable.css";
+@import "utilities.css";
+@import "responsive.css";
+
+h1 {
+  color: var(--green);
+}
