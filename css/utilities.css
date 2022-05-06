@@ -1,15 +1,98 @@
-.container {
-  margin: auto;
-  width: 1320px;
-}
+/* Color */
 
 .bg-black {
   background-color: var(--black);
+}
+/* Padding & Margin */
+/* .pt-100 {
+  padding-top: 100px;
+} */
+.mt-100 {
+  margin-top: 100px;
+}
+
+/* Position */
+.container {
+  margin: auto;
+  width: 1640px;
 }
 
 .d-block {
   display: block;
 }
 
-.text-outline {
+.flex-column-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.align-right {
+  text-align: end;
+}
+
+.flex-end {
+  display: flex;
+
+  justify-content: end;
+}
+
+/* Text */
+
+h1,
+h2 {
+  font-size: 140px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 16px;
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.prata {
+  font-family: "Prata", serif;
+  font-weight: 500;
+}
+
+@supports (-webkit-text-stroke: 2px var(--green)) {
+  .text-outline-green {
+    -webkit-text-stroke: 2px var(--green);
+    -webkit-text-fill-color: transparent;
+  }
+  .text-outline-white {
+    -webkit-text-stroke: 2px var(--white);
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Links */
+a:link {
+  color: var(--green);
+}
+
+a:visited {
+  color: var(--green);
+}
+
+a:hover {
+  color: var(--white);
+}
+
+a:active {
+  color: var(--green);
 }

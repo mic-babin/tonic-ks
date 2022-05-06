@@ -26,29 +26,97 @@
   </head>
 
   <body>
-    <!-- Nav -->
-    <!-- Should the logo be a sticky nav that brings back to top? -->
-
     <!-- Hero -->
+    <!-- TODO Switch image for video and add opacity gradient-->
     <section class="bg-black hero-section">
-      <div class="container">
-        <h1>
-          <span class="d-block text-outline">Discover</span
+      <div class="logo"><img src="./assets/image/logo.png" alt="" /></div>
+      <img class="bg-video" src="/assets/image/hero.png" alt="" />
+      <!-- <video  class="bg-video" autoplay muted loop id="myVideo">
+            <source src="rain.mp4" type="video/mp4">
+          </video> -->
+      <div class="container flex-column-center">
+        <h1 class="w-100">
+          <span class="d-block text-outline-green">DISCOVER</span
           ><span class="d-block">OUR DIRECTORS</span
-          ><span class="d-block"><span>&</span> ANIMATORS</span>
+          ><span1 class="d-block align-right"
+            ><span class="prata text-green">&</span> ANIMATORS</span1
+          >
         </h1>
         <img class="scroll-down" src="./assets/image/scroll-down.svg" alt="" />
       </div>
     </section>
 
     <!-- About us -->
-    <section>About us</section>
+    <section class="about-section">
+      <div class="container">
+        <p>
+          Recently, we have animated many famous<br />
+          characters for projects like <span>Space Jam a New<br />
+          Legacy</span>, <span>Looney Tunes</span>, <span>Green Eggs and Ham</span>,<br /> 
+          <span>Animaniacs</span> and Central Park.</p>
+          <p> We love quality service work and we bring our<br />
+          passion for animation to our original IP's too.</p>
+        </p>
+        <h2>
+            WE <span class="prata">are</span><br>
+            TONIC DNA
+        </h2>
+        <div class="w-100 flex-end">
+                <p class="semi-bold">
+                    TAKE A LOOK, DROP US A LINE<br>
+                    AND SEE WHAT WE CAN DO.
+                </p>
+        </div>
+      </div>
+      <div class="video-section">
+          <!-- TODO Replace image for video -->
+          <!-- TODO Replace cursor for image -->
+          <div class="container">
+            <img class="video"src="./assets/image/video-thumb.jpg" alt="">
+          </div>
+          <img class="play" src="./assets/image/play.svg" alt=""></div>
+         
+      </div>
+    </section>
     <!-- Video -->
-    <section>video</section>
+    
     <!-- Contact us -->
-    <section>Contact us</section>
+    <section class="contact-section bg-black">
+        <div class="title-wrapper">
+            <h2 class="text-outline-white">CONTACT US CONTACT US CONTACT US</h2>
+        </div>
+        <div class="cards-wrapper">
+            <div class="card">
+                <img src="./assets/image/howard.jpg" alt="">
+                <div class="name">HOWARD HUXHAM</div>
+                <div class="title">Partner & Executive Producer
+                </div>
+                <div class="email"><a href="mailto:howard@tonicdna.com">howard@tonicdna.com</a> </div>
+            </div>
+            <div class="card">
+                <img src="./assets/image/mariana.jpg" alt="">
+                <div class="name">MARIANA DURÁN</div>
+                <div class="title">Producer | Business Development
+                </div>
+                <div class="email"><a href="mailto:mariana@tonicdna.com">mariana@tonicdna.com</a> </div>
+            </div>
+        </div>
+        </section>
     <!-- Show more work -->
-    <section>Show more work</section>
+    <section class="show-work-section">
+        <div class="scroll-1 prata">WE ANIMATE</div>
+        <div class="scroll-2 prata">WE CREATE</div>
+        <div class="show-work">SHOW <span class="prata">more</span> WORK</div>
+        <div class="scroll-3 prata">WE SERVICE</div>
+        <div class="scroll-4 prata">WE DEVELOP</div>
+        <div class="stay-tuned-wrapper"><p class="align-right">STAY TUNED<br>
+            FOR MORE</p> 
+            </div>
+        <img src="./assets/image/more-work-1.jpg" alt="" class="img-1">
+        <img src="./assets/image/more-work-2.jpg" alt="" class="img-2">
+        <img src="./assets/image/more-work-3.jpg" alt="" class="img-3">
+        <img src="./assets/image/more-work-4.jpg" alt="" class="img-4">
+    </section>
 
     <script src="js/scripts.js"></script>
   </body>
