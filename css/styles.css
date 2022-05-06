@@ -1,7 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import "reset.css";
 @import "variable.css";
 @import "utilities.css";
 @import "responsive.css";
+
+/* ======= Hero ======= */
+.hero-section {
+  height: 1080px;
+}
+.scroll-down {
+}
+
+/* ======= About us ======= */
+
+/* ======= Video ======= */
+
+/* ======= Contact us ======= */
+
+/* ======= Show more work ======= */
+
+/* ======= Test ======= */
 
 h1 {
   color: var(--green);

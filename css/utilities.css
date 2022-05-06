@@ -2,3 +2,14 @@
   margin: auto;
   width: 1320px;
 }
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.d-block {
+  display: block;
+}
+
+.text-outline {
+}
