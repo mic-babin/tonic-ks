@@ -32,10 +32,10 @@
   position: absolute;
   z-index: 1;
 }
-.tooltip-1 {
+.tooltip:first-of-type {
   visibility: hidden;
 }
 
-.tooltip-wrapper:hover .tooltip-1 {
+.tooltip-wrapper:hover .tooltip:first-of-type {
   visibility: visible;
 }
