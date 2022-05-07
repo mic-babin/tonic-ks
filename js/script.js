@@ -1,39 +1,22 @@
-import createIntersectionObserver from './createIntersectionObserver.js';
+import Observer from './Observer.class.js';
+import { bgColorChange, bgHeroColorChange, workAnim } from './animations.js';
 
 (() => {
-  function bgColorChange(entries) {
-    const [entry] = entries;
-    const titles = document.querySelectorAll('.title');
-    const names = document.querySelectorAll('.name');
-    const h2 = document.querySelector('.contact-title')
+  // OBSERVER HERO SECTION
+  new Observer(document.querySelector('.hero-section'), bgHeroColorChange, {
+    rootMargin: '0px 0px 300px 0px',
+    threshold: 0.9
+  });
 
-    if (entry.isIntersecting) {
-      entry.target.classList.remove('bg-black');
-
-      h2.classList.remove('text-outline-white')
-      h2.classList.add('text-outline-black')
-
-      const els = [...titles, ...names];
-      els.forEach(el => {
-          el.style.color = "black"
-      });
-    } else {
-      entry.target.classList.add('bg-black');
-
-      h2.classList.remove('text-outline-black')
-      h2.classList.add('text-outline-white')
-
-      const els = [...titles, ...names];
-      els.forEach(el => {
-          el.style.color = "white"
-      });
-    }
-  }
-
-  // createObserver for SHOW WORK SECTION
-  const contactSection = document.querySelector('.contact-section');
-  createIntersectionObserver(contactSection, bgColorChange, {
+  // OBSERVER CONTACT SECTION
+  new Observer(document.querySelector('.contact-section'), bgColorChange, {
     rootMargin: '0px',
-    threshold: [0.35, 0.75]
+    threshold: [0.35, 0.9]
+  });
+
+  // OBSERVER WORK SECTION
+  new Observer(document.querySelector('.show-work-section'), workAnim, {
+    rootMargin: '0px',
+    threshold: [0.1]
   });
 })();

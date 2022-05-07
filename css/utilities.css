@@ -3,6 +3,14 @@
 .bg-black {
   background-color: var(--black);
 }
+.text-black {
+  color: var(--black);
+}
+
+.animate {
+  transition: color 1500ms ease-in-out;
+}
+
 /* Padding & Margin */
 /* .pt-100 {
     padding-top: 100px;
@@ -65,7 +73,7 @@ h2 {
 }
 
 .prata {
-  font-family: "Prata", serif;
+  font-family: 'Prata', serif;
   font-weight: 500;
 }
 
