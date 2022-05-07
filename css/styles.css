@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "variable.css";
 @import "utilities.css";
+@import "animations.css";
 @import "responsive.css";
 
 /* ======= Hero ======= */
@@ -39,6 +40,7 @@ h1 {
   height: 145px;
   width: 145px;
   z-index: 2;
+  cursor: pointer;
 }
 
 /* ======= About us ======= */
@@ -75,6 +77,14 @@ h2 {
   padding-top: 175px;
   font-weight: 700;
   letter-spacing: 0px;
+}
+
+/* ======= Image ======= */
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* ======= Video ======= */

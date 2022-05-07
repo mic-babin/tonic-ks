@@ -1,0 +1,41 @@
+/* Scroll down */
+
+.scroll-down {
+  animation: rotation 20s infinite linear;
+}
+
+.scroll-down-wrapper {
+  transition: 10s all;
+}
+.scroll-down-wrapper:hover {
+  transform: rotate(-500deg);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Modal images on hover */
+
+.tooltip-wrapper {
+  position: relative;
+}
+
+.tooltip {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip-1 {
+  visibility: hidden;
+}
+
+.tooltip-wrapper:hover .tooltip-1 {
+  visibility: visible;
+}
