@@ -91,6 +91,11 @@ img {
 
 .video {
   width: 100%;
+  cursor: url(../assets/image/cursor.png), auto;
+}
+
+video:hover {
+  border-radius: 20px;
 }
 
 .video-section {
@@ -104,6 +109,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -30%);
+  cursor: url(../assets/image/cursor.png), auto;
 }
 
 /* ======= Contact us ======= */

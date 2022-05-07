@@ -22,20 +22,25 @@
 
 /* Modal images on hover */
 
-.tooltip-wrapper {
-  position: relative;
-}
-
 .tooltip {
-  width: 120px;
+  width: 250px;
   height: auto;
   position: absolute;
-  z-index: 1;
-}
-.tooltip:first-of-type {
+  z-index: -1;
   visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+  top: 0;
+  left: 0;
 }
 
-.tooltip-wrapper:hover .tooltip:first-of-type {
+.ttw-1:hover .tooltip,
+.ttw-2:hover .tooltip,
+.ttw-3:hover .tooltip,
+.ttw-4:hover .tooltip,
+.ttw-5:hover .tooltip,
+.ttw-6:hover .tooltip {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
 }
