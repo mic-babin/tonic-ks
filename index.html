@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script type="module" src="js/script.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="js/wordScroll.js" defer></script>
   </head>
 
   <body>
@@ -115,18 +116,20 @@
         </section>
     <!-- Show more work -->
     <section class="show-work-section">
-        <!-- <div class="scroll-1 prata">WE ANIMATE</div>
-        <div class="scroll-2 prata">WE CREATE</div> -->
+        <div id="scroll1" class="prata scroll">WE ANIMATE</div>
+        <div id="scroll2" class="scroll prata">WE CREATE</div>
         <div class="show-work">SHOW <span class="prata">more</span> WORK</div>
-        <!-- <div class="scroll-3 prata">WE SERVICE</div>
-        <div class="scroll-4 prata">WE DEVELOP</div> -->
+        <div id="scroll3" class="scroll prata">WE SERVICE</div>
+        <div id="scroll4" class="scroll prata">WE DEVELOP</div>
         <div class="stay-tuned-wrapper"><p class="align-right">STAY TUNED<br>
             FOR MORE</p> 
             </div>
-        <img src="./assets/image/more-work-1.jpg" alt="" class="thumb img-1" data-img="1">
-        <img src="./assets/image/more-work-2.jpg" alt="" class="thumb img-2" data-img="2">
-        <img src="./assets/image/more-work-3.jpg" alt="" class="thumb img-3" data-img="3">
-        <img src="./assets/image/more-work-4.jpg" alt="" class="thumb img-4" data-img="4">
+            <div class="thumb thumb-1">
+              <img src="./assets/image/more-work-1.jpg" alt="" class="img-1" data-img="1">
+            </div>
+        <div class="thumb thumb-2"><img src="./assets/image/more-work-2.jpg" alt="" class="img-2" data-img="2"></div>
+        <div class="thumb thumb-3"><img src="./assets/image/more-work-3.jpg" alt="" class="img-3" data-img="3"></div>
+        <div class="thumb thumb-4"><img src="./assets/image/more-work-4.jpg" alt="" class="img-4" data-img="4"></div>
     </section>
   </body>
 </html>

@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-@import "reset.css";
-@import "variable.css";
-@import "utilities.css";
-@import "animations.css";
-@import "responsive.css";
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import 'reset.css';
+@import 'variable.css';
+@import 'utilities.css';
+@import 'animations.css';
+@import 'responsive.css';
 
 /* ======= Hero ======= */
 :root {
@@ -179,21 +179,6 @@ video:hover {
   min-height: 100vh;
 }
 
-.scroll-1,
-.scroll-2,
-.scroll-3,
-.scroll-4 {
-  font-size: 100px;
-}
-
-.scroll-1 {
-  padding-top: 100px;
-  transform: translateX(250px);
-}
-.scroll-2 {
-  transform: translateX(1150px);
-}
-
 .show-work {
   position: absolute;
   z-index: 111;
@@ -215,14 +200,6 @@ video:hover {
   line-height: 155px;
 }
 
-.scroll-3 {
-  transform: translateX(30px);
-}
-.scroll-4 {
-  padding-top: 100px;
-  transform: translateX(800px);
-}
-
 .stay-tuned-wrapper {
   overflow: hidden;
   font-size: 20px;
@@ -232,31 +209,119 @@ video:hover {
   transform: translateY(-50%);
 }
 
+.thumb {
+  overflow: hidden;
+  width: 22vw;
+  min-width: 350px;
+  position: absolute;
+  z-index: -1;
+  cursor: pointer;
+}
+
 .img-1,
 .img-2,
 .img-3,
 .img-4 {
-  position: absolute;
-  z-index: -1;
-  width: 30vw;
-  min-width: 350px;
-  transition: transform 20000ms ease-out;
+  animation: zoomInOut 10000ms infinite;
+  width: 100%;
 }
 
-.img-1 {
+.thumb-1 {
   top: 170px;
   left: 75px;
 }
-.img-2 {
+.thumb-2 {
   top: 120px;
   right: 0px;
   z-index: 1;
 }
-.img-3 {
+.thumb-3 {
   bottom: 50px;
   left: 200px;
 }
-.img-4 {
+.thumb-4 {
   bottom: 200px;
   right: 200px;
+}
+
+#scroll1,
+#scroll2,
+#scroll3,
+#scroll4 {
+  font-size: 100px;
+}
+
+#scroll1 {
+  position: absolute;
+  transform: translate(150px, 100px);
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 1500ms ease-in-out;
+  transition-delay: 500ms;
+}
+#scroll2 {
+  position: absolute;
+  transform: translate(1150px, 300px);
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 1500ms ease-in-out;
+  transition-delay: 1000ms;
+}
+
+#scroll3 {
+  position: absolute;
+  transform: translate(-400px, 500px);
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 1500ms ease-in-out;
+  transition-delay: 1500ms;
+}
+#scroll4 {
+  position: absolute;
+  transform: translate(800px, 700px);
+  width: fit-content;
+  opacity: 0;
+  transition: opacity 1500ms ease-in-out;
+  transition-delay: 2000ms;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animationScrollWords {
+  animation-name: animation1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes animation1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animationScrollWordsClone {
+  animation-name: animation2;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes animation2 {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
 }

@@ -77,6 +77,10 @@ h2 {
   text-align: center;
 }
 
+.img-wrap {
+  position: relative;
+}
+
 @supports (-webkit-text-stroke: 2px var(--green)) {
   .text-outline-green {
     -webkit-text-stroke: 2px var(--green);

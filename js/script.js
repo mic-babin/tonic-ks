@@ -14,41 +14,48 @@ import { bgColorChange, bgHeroColorChange, throttle } from './animations.js';
     threshold: [0.35, 0.9]
   });
 
-  // OBSERVER WORK SECTION
+  // WORK SECTION
   const workSection = document.querySelector('.show-work-section');
   const images = document.querySelectorAll('.thumb');
+
+  // observer
 
   function move(e) {
     // to the left and down
     if ((e.movementX < 0) & (e.movementY < 0)) {
       images.forEach(img => {
-        img.style.transform = `translate(${400}px, ${400}px)`;
+        img.style.transform = `translate(${400}px, ${400}px) `;
+        img.style.transition = `transform 15000ms ease-out`;
       });
       // to the right and up
     } else if ((e.movementX > 0) & (e.movementY > 0)) {
       images.forEach(img => {
         img.style.transform = `translate(-${400}px, -${400}px)`;
+        img.style.transition = `transform 15000ms ease-out`;
       });
       // to the left and up
     } else if ((e.movementX < 0) & (e.movementY > 0)) {
       images.forEach(img => {
         img.style.transform = `translate(${400}px, -${400}px)`;
+        img.style.transition = `transform 15000ms ease-out`;
       });
       // to the right and down
     } else if ((e.movementX > 0) & (e.movementY < 0)) {
       images.forEach(img => {
         img.style.transform = `translate(-${400}px, ${400}px)`;
+        img.style.transition = `transform 15000ms ease-out`;
       });
     }
   }
 
-  function stop (e) {
+  function stop(e) {
     images.forEach(img => {
       img.style.transform = `translate(${0}px, ${0}px)`;
+      img.style.transition = `transform 20000ms ease-out`;
     });
   }
 
   workSection.addEventListener('mousemove', throttle(move, 250), false);
-  workSection.addEventListener('click', stop)
-  workSection.addEventListener('mouseleave', stop)
+  workSection.addEventListener('click', stop);
+  workSection.addEventListener('mouseleave', stop);
 })();
