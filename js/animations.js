@@ -1,17 +1,3 @@
-export const throttle = (callback, limit) => {
-  let wait = false;
-  return function (...args) { 
-    if (!wait) {
-        callback(...args);
-        wait = true; 
-        setTimeout(function () { 
-            wait = false; 
-        }, limit);
-    }
-  }
-}
-
-
 export const bgColorChange = entries => {
   const [entry] = entries;
   const titles = document.querySelectorAll('.title');
@@ -57,4 +43,41 @@ export const bgHeroColorChange = entries => {
     });
   }
 };
+
+// SHOW WORK SECTION: MOVING IMAGES
+const images = document.querySelectorAll('.thumb');
+export function move(e) {
+  // to the left and down
+  if ((e.movementX < 0) & (e.movementY < 0)) {
+    images.forEach(img => {
+      img.style.transform = `translate(${400}px, ${400}px) `;
+      img.style.transition = `transform 15000ms ease-out`;
+    });
+    // to the right and up
+  } else if ((e.movementX > 0) & (e.movementY > 0)) {
+    images.forEach(img => {
+      img.style.transform = `translate(-${400}px, -${400}px)`;
+      img.style.transition = `transform 15000ms ease-out`;
+    });
+    // to the left and up
+  } else if ((e.movementX < 0) & (e.movementY > 0)) {
+    images.forEach(img => {
+      img.style.transform = `translate(${400}px, -${400}px)`;
+      img.style.transition = `transform 15000ms ease-out`;
+    });
+    // to the right and down
+  } else if ((e.movementX > 0) & (e.movementY < 0)) {
+    images.forEach(img => {
+      img.style.transform = `translate(-${400}px, ${400}px)`;
+      img.style.transition = `transform 15000ms ease-out`;
+    });
+  }
+}
+
+export function stop(e) {
+  images.forEach(img => {
+    img.style.transform = `translate(${0}px, ${0}px)`;
+    img.style.transition = `transform 20000ms ease-out`;
+  });
+}
 

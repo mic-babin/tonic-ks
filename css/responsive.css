@@ -31,6 +31,23 @@
   .contact-section .title-wrapper > h2 {
     font-size: 120px;
   }
+
+  /* SHOW WORK */
+  #scroll1,
+  #scroll1Clone,
+  #scroll2,
+  #scroll2Clone,
+  #scroll3,
+  #scroll3Clone,
+  #scroll4,
+  #scroll4Clone {
+    font-size: 80px !important;
+  }
+
+  .thumb-4 {
+    bottom: 200px;
+    right: 30px !important;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -50,6 +67,31 @@
   .contact-section .title-wrapper {
     padding-top: 50px;
     padding-bottom: 150px;
+  }
+
+  /* SHOW WORK */
+  #scroll1,
+  #scroll1Clone,
+  #scroll2,
+  #scroll2Clone,
+  #scroll3,
+  #scroll3Clone,
+  #scroll4,
+  #scroll4Clone {
+    font-size: 50px !important;
+  }
+
+  .thumb-1 {
+    top: 220px !important;
+    left: 50px !important;
+  }
+  .thumb-3 {
+    bottom: 150px !important;
+    left: 100px !important;
+  }
+  .thumb-4 {
+    bottom: 300px !important;
+    right: 200px;
   }
 }
 
@@ -76,6 +118,19 @@
   .contact-section .title-wrapper > h2 {
     font-size: 100px;
   }
+
+  /* SHOW WORK  */
+  .stay-tuned-wrapper {
+    top: 40% !important;
+  }
+
+  .thumb-3 {
+    left: 30px !important;
+  }
+
+  .thumb-4 {
+    right: 50px !important;
+  }
 }
 
 @media only screen and (max-width: 846px) {
@@ -93,6 +148,15 @@
   /* CONTACT US */
   .contact-section .title-wrapper > h2 {
     font-size: 90px;
+  }
+
+  /* show work */
+  .show-work {
+    font-size: 30px !important;
+  }
+
+  .thumb {
+    width: 17vw !important;
   }
 }
 
@@ -136,6 +200,45 @@
 
   .contact-section .cards-wrapper > .card:last-of-type {
     padding-left: 25px;
+  }
+
+  /* SHOW WORK */
+  .thumb-1 {
+    top: 50px !important;
+    left: 20px !important;
+  }
+  .thumb-2 {
+    top: 250px !important;
+    right: 20px !important;
+  }
+  .thumb-3 {
+    bottom: 50px !important;
+    left: 20px !important;
+  }
+  .thumb-4 {
+    right: 20px !important;
+  }
+
+  /* show work */
+  .show-work span {
+    height: 110px !important;
+    width: 110px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .show-work {
+    font-size: 20px !important;
+    display: flex;
+    align-items: center;
+  }
+
+  .stay-tuned-wrapper {
+    top: 40% !important;
+    left: 10% !important;
   }
 }
 
@@ -192,6 +295,18 @@
   .contact-section .title-wrapper > h2 {
     font-size: 70px;
     letter-spacing: 4px;
+  }
+
+  /* SHOW WORK */
+  #scroll1,
+  #scroll1Clone,
+  #scroll2,
+  #scroll2Clone,
+  #scroll3,
+  #scroll3Clone,
+  #scroll4,
+  #scroll4Clone {
+    font-size: 40px !important;
   }
 }
 

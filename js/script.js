@@ -1,5 +1,7 @@
 import Observer from './Observer.class.js';
-import { bgColorChange, bgHeroColorChange, throttle } from './animations.js';
+import { bgColorChange, bgHeroColorChange, stop, move } from './animations.js';
+import { throttle } from './utils.js';
+import { wordScrollResize } from './wordScroll.js';
 
 (() => {
   // OBSERVER HERO SECTION
@@ -16,46 +18,12 @@ import { bgColorChange, bgHeroColorChange, throttle } from './animations.js';
 
   // WORK SECTION
   const workSection = document.querySelector('.show-work-section');
-  const images = document.querySelectorAll('.thumb');
 
-  // observer
-
-  function move(e) {
-    // to the left and down
-    if ((e.movementX < 0) & (e.movementY < 0)) {
-      images.forEach(img => {
-        img.style.transform = `translate(${400}px, ${400}px) `;
-        img.style.transition = `transform 15000ms ease-out`;
-      });
-      // to the right and up
-    } else if ((e.movementX > 0) & (e.movementY > 0)) {
-      images.forEach(img => {
-        img.style.transform = `translate(-${400}px, -${400}px)`;
-        img.style.transition = `transform 15000ms ease-out`;
-      });
-      // to the left and up
-    } else if ((e.movementX < 0) & (e.movementY > 0)) {
-      images.forEach(img => {
-        img.style.transform = `translate(${400}px, -${400}px)`;
-        img.style.transition = `transform 15000ms ease-out`;
-      });
-      // to the right and down
-    } else if ((e.movementX > 0) & (e.movementY < 0)) {
-      images.forEach(img => {
-        img.style.transform = `translate(-${400}px, ${400}px)`;
-        img.style.transition = `transform 15000ms ease-out`;
-      });
-    }
+  if (workSection.getBoundingClientRect().width > 992) {
+    workSection.addEventListener('mousemove', throttle(move, 250), false);
+    workSection.addEventListener('click', stop);
+    workSection.addEventListener('mouseleave', stop);
   }
 
-  function stop(e) {
-    images.forEach(img => {
-      img.style.transform = `translate(${0}px, ${0}px)`;
-      img.style.transition = `transform 20000ms ease-out`;
-    });
-  }
-
-  workSection.addEventListener('mousemove', throttle(move, 250), false);
-  workSection.addEventListener('click', stop);
-  workSection.addEventListener('mouseleave', stop);
+  window.addEventListener('resize', wordScrollResize);
 })();
