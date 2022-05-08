@@ -28,13 +28,13 @@
 
   <body>
     <!-- Hero -->
-    <!-- TODO Switch image for video and add opacity gradient-->
     <section class="bg-black hero-section">
       <div class="logo"><img src="./assets/image/logo.png" alt="" /></div>
-      <img class="bg-video" src="/assets/image/hero.png" alt="" />
-      <!-- <video  class="bg-video" autoplay muted loop id="myVideo">
-            <source src="rain.mp4" type="video/mp4">
-          </video> -->
+      
+      <video  class="bg-video" autoplay muted loop id="myVideo">
+            <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="bg-video-vignette"></div>
       <div class="flex-column-center">
         <h1 class="w-100">
           <span class="d-block text-outline-green">DISCOVER</span>
@@ -54,9 +54,9 @@
       <div class="container">
         <p>
           Recently, we have animated many famous<br />
-          characters for projects like <span>Space Jam a New<br />
-          Legacy</span>, <span class="tooltip-wrapper">Looney Tunes<span class="tooltip tooltip-1"><img src="./assets/image/more-work-1.jpg" alt=""></span></span>, <span>Green Eggs and Ham</span>,<br /> 
-          <span>Animaniacs</span> and Central Park.</p>
+          characters for projects like <span class="tooltip-wrapper ttw-1">Space Jam a New<br />
+          Legacy<span class="tooltip"><img src="./assets/image/more-work-1.jpg" alt=""></span></span>, <span class="tooltip-wrapper ttw-2">Looney Tunes<span class="tooltip"><img src="./assets/image/more-work-2.jpg" alt=""></span></span>, <span class="tooltip-wrapper ttw-3">Green Eggs and Ham<span class="tooltip"><img src="./assets/image/more-work-3.jpg" alt=""></span></span>,<br /> 
+          <span class="tooltip-wrapper ttw-4">Animaniacs<span class="tooltip"><img src="./assets/image/more-work-4.jpg" alt=""></span></span><span class="tooltip-wrapper ttw-5"> and Central Park.<span class="tooltip"><img src="./assets/image/more-work-1.jpg" alt=""></span></span></p>
           <p> We love quality service work and we bring our<br />
           passion for animation to our original IP's too.</p>
 
@@ -66,18 +66,25 @@
         </h2>
         <div class="w-100 flex-end cta">
                 <p class="semi-bold">
-                    TAKE A LOOK, DROP US A LINE
+                    TAKE A LOOK, DROP US A LINE<br>
                     AND SEE WHAT WE CAN DO.
                 </p>
         </div>
       </div>
       <div class="video-section">
-          <!-- TODO Replace image for video -->
-          <!-- TODO Replace cursor for image -->
-          <div class="container">
-            <img class="video"src="./assets/image/video-thumb.jpg" alt="">
+        
+          
+            <div class="container">
+           
+                <video  class="video" id="myVideo" poster="./assets/image/video-thumb.jpg" controls>
+                    <source src="assets/video/hero.mp4" type="video/mp4">
+                </video>
+              </div>
+              <img class="play" src="./assets/image/play.svg" alt="">
+          
+            
           </div>
-          <img class="play" src="./assets/image/play.svg" alt=""></div>
+          
          
       </div>
     </section>

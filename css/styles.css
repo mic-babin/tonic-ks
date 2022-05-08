@@ -30,6 +30,16 @@
   z-index: 0;
 }
 
+.bg-video-vignette {
+  position: absolute;
+  top: -140px;
+  right: 0;
+  height: 1140px;
+  width: 1140px;
+  z-index: 0;
+  background: radial-gradient(circle, transparent 0%, black 60%);
+}
+
 h1 {
   padding-top: 250px;
   color: white;
@@ -40,7 +50,7 @@ h1 {
 .scroll-down {
   height: 145px;
   width: 145px;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -92,6 +102,11 @@ img {
 
 .video {
   width: 100%;
+  cursor: url(../assets/image/cursor.png), auto;
+}
+
+video:hover {
+  border-radius: 20px;
 }
 
 .video-section {
@@ -105,6 +120,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -30%);
+  cursor: url(../assets/image/cursor.png), auto;
 }
 
 /* ======= Contact us ======= */
