@@ -1,3 +1,17 @@
+export const throttle = (callback, limit) => {
+  let wait = false;
+  return function (...args) { 
+    if (!wait) {
+        callback(...args);
+        wait = true; 
+        setTimeout(function () { 
+            wait = false; 
+        }, limit);
+    }
+  }
+}
+
+
 export const bgColorChange = entries => {
   const [entry] = entries;
   const titles = document.querySelectorAll('.title');
@@ -34,20 +48,13 @@ export const bgHeroColorChange = entries => {
   if (entry.isIntersecting) {
     entry.target.classList.add('bg-black');
     spans.forEach(span => {
-      span.classList.remove('text-black')
-    })
+      span.classList.remove('text-black');
+    });
   } else {
     entry.target.classList.remove('bg-black');
     spans.forEach(span => {
-      span.classList.add('text-black')
-    })
+      span.classList.add('text-black');
+    });
   }
 };
 
-export const workAnim = entries => {
-  const [entry] = entries;
-  const showWork = document.querySelector('.show-work');
-  if (entry.isIntersecting) {
-    console.log('yesyeysye')
-  }
-};
