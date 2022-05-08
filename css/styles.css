@@ -195,8 +195,11 @@ video:hover {
 }
 
 .show-work {
-  text-align: center;
-  padding: 100px;
+  position: absolute;
+  z-index: 111;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 40px;
   font-weight: 800;
 }
@@ -228,13 +231,6 @@ video:hover {
   left: 150px;
   transform: translateY(-50%);
 }
-
-.wrapper-images {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 
 .img-1,
 .img-2,
