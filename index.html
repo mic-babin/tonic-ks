@@ -5,36 +5,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TODO</title>
-    <meta name="description" content="TODO" />
-    <meta name="TODO" content="TODO" />
+    <title>Tonic DNA - Montreal-based animation studio</title>
+    <meta name="description" content="We are a full-service, award-winning studio providing high-quality animated content for advertising, film and series for more than 35 years. " />
+    <meta name="title" content="Tonic DNA - Montreal-based animation studio" />
 
-    <meta property="og:title" content="TODO" />
+    <meta property="og:title" content="Tonic DNA - Montreal-based animation studio" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="TODO" />
-    <meta property="og:description" content="TODO" />
-    <meta property="og:image" content="TODO" />
+    <meta property="og:url" content="https://tonicdna.com/ks" />
+    <meta property="og:description" content="We are a full-service, award-winning studio providing high-quality animated content for advertising, film and series for more than 35 years. " />
+    <meta property="og:image" content="./assets/image/logo.png" />
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" href="./assets/image/logo.png" />
+    <link rel="icon" href="./assets/image/logo.png" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/image/logo.png" />
 
     <!-- Proxima Nova -->
     <link rel="stylesheet" href="https://use.typekit.net/ljs4bmi.css" />
 
     <link rel="stylesheet" href="css/styles.css" />
     <script type="module" src="js/script.js" defer></script>
+    <script src="js/index.js" defer></script>
   </head>
 
   <body>
     <!-- Hero -->
-    <section class="bg-black hero-section">
-      <div class="logo"><img src="./assets/image/logo.png" alt="" /></div>
-      
-      <video  class="bg-video" autoplay muted loop id="myVideo">
+    <section class="bg-black hero-section ">
+        <!-- TODO Check radial gradient position with new video -->
+        <video  class="bg-video" autoplay muted loop id="myVideo">
             <source src="assets/video/hero.mp4" type="video/mp4">
         </video>
-        <div class="bg-video-vignette"></div>
+        <div class="vignette-black"></div>
+        <div class="vignette-white"></div>
+      <div class="logo"><img src="./assets/image/logo.png" alt="" /></div>
+      
+      
+        
       <div class="flex-column-center">
         <h1 class="w-100">
           <span class="d-block text-outline-green">DISCOVER</span>
@@ -43,9 +48,101 @@
             <span class="animate">ANIMATORS</span>
         </h1>
         <a class="scroll-down-wrapper" href="#about">
-            <img class="scroll-down" src="./assets/image/scroll-down.svg" alt="" />
+            <!-- <img class="scroll-down" src="./assets/image/scroll-down.svg" alt="" /> -->
+            <svg class="scroll-down" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	            viewBox="0 0 145.3 146.9" style="enable-background:new 0 0 145.3 146.9;" xml:space="preserve">
+                <g id="Group_77" transform="matrix(-0.996, -0.087, 0.087, -0.996, -268.147, -332.495)">
+                    <g id="Group_69" transform="translate(-447.301 -447.139)">
+                        <g id="Group_68">
+                            <path id="Path_40" class="svg-1" d="M0,68.3c0.1-2,1.6-2.8,4.1-2.7l0.4,1.4l-0.8,0c-1.7-0.1-2.5,0.4-2.5,1.4c0,0.9,0.7,1.5,2.1,1.6
+                                c3.6,0.2,4.7-4.1,8.9-3.9c2.1,0.1,3.3,1.1,3.2,3c-0.1,2-1.6,2.8-4.1,2.7l-0.4-1.4l0.8,0c1.7,0.1,2.5-0.4,2.5-1.4
+                                c0.1-1-0.6-1.5-2-1.5c-3.7-0.2-4.8,4.1-8.9,3.9C1.2,71.3-0.1,70.1,0,68.3z"/>
+                            <path id="Path_41" class="svg-1" d="M1.5,57.1c0.4-1.9,2-2.5,4.5-2l0.2,1.5l-0.8-0.2c-1.7-0.4-2.5,0-2.7,1s0.4,1.6,2.1,2l7.9,1.7
+                                c1.6,0.3,2.5,0,2.7-1s-0.5-1.6-2.1-2l-0.8-0.2l0.7-1.3c2.4,0.5,3.7,1.7,3.3,3.7c-0.4,1.8-1.9,2.6-4.5,2l-7.2-1.5
+                                C2.2,60.2,1.1,59,1.5,57.1z"/>
+                            <path id="Path_42" class="svg-1" d="M19.5,50l-7.2-0.8c0,0.2-0.1,0.4-0.2,0.6l-0.3,0.9l6.5,2.5l-0.5,1.3L3.9,49.2L4.7,47
+                                c0.7-1.8,2.2-2.8,4.5-1.9l0.8,0.3c1.2,0.3,2.1,1.3,2.3,2.6l7.6,0.7L19.5,50z M9.4,46.7l-0.6-0.2c-1.7-0.6-2.6-0.1-3.1,1.1
+                                l-0.3,0.7l5.3,2l0.3-0.7C11.4,48.4,11,47.3,9.4,46.7z"/>
+                            <path id="Path_43" class="svg-1" d="M9.6,36.1c0.9-1.6,2.6-1.8,4.9-0.5l6.4,3.7c2.3,1.3,2.9,2.9,2,4.5s-2.6,1.8-4.9,0.5l-6.4-3.7
+                                C9.3,39.3,8.7,37.7,9.6,36.1z M10.6,36.7c-0.5,0.8-0.1,1.7,1.4,2.5l7,4.1c1.5,0.8,2.4,0.8,2.9-0.1s0.1-1.7-1.4-2.5l-7-4.1
+                                C12,35.8,11.1,35.8,10.6,36.7L10.6,36.7z"/>
+                            <path id="Path_44" class="svg-1" d="M14.6,28.9l0.9-1.1l10.7,8.6l2.3-2.9l0.9,0.7l-3.2,4L14.6,28.9z"/>
+                            <path id="Path_45" class="svg-1" d="M21.2,21.2l1-0.9l9.5,10l2.7-2.6l0.8,0.8l-3.7,3.5L21.2,21.2z"/>
+                            <path id="Path_46" class="svg-1" d="M41.1,12.1l2.9,5.1c1.5,2.6,1.1,4.6-1,5.8l-1.6,0.9L34,11l1.6-0.9C37.7,8.9,39.6,9.5,41.1,12.1
+                                z M39.7,12.4c-0.9-1.6-2.1-2.1-3.4-1.3l-0.5,0.3l6.3,10.9l0.5-0.3c1.3-0.7,1.5-2,0.6-3.6L39.7,12.4z"/>
+                            <path id="Path_47" class="svg-1" d="M46.8,4.5c1.7-0.7,3.2,0.2,4.1,2.7l2.6,6.9c0.9,2.5,0.4,4.1-1.3,4.7s-3.2-0.2-4.1-2.7l-2.6-6.9
+                                C44.5,6.8,45,5.2,46.8,4.5z M47.1,5.6c-0.9,0.3-1.1,1.3-0.5,2.8l2.9,7.6c0.6,1.6,1.4,2.1,2.3,1.8s1.1-1.3,0.5-2.8l-2.9-7.6
+                                C48.8,5.8,48.1,5.2,47.1,5.6L47.1,5.6z"/>
+                            <path id="Path_48" class="svg-1" d="M55,2l1.4-0.2c1,3.9,2.6,9.4,3.7,13.3l0.2,0c-0.3-4.6-0.8-10.2-1.1-13.8L60.8,1
+                                c1,3.5,2.4,8.9,3.7,13.3l0.2,0c-0.3-4.1-0.7-9.8-1-13.8L65,0.2c0.4,4.8,0.8,10.6,0.9,15l-2.1,0.4c-1.1-3.7-2.3-8.1-3.5-13.1
+                                l-0.1,0c0.5,5.2,0.9,9.7,1.1,13.6l-2.1,0.4C57.8,12.2,56.2,6.7,55,2z"/>
+                            <path id="Path_49" class="svg-1" d="M70.8,0l1.1,0l3.2,11.5l0.2-11.4l1.3,0L76.3,15L75,15L72,4.7l-0.2,10.2l-1.3,0L70.8,0z"/>
+                            <path id="Path_50" class="svg-1" d="M90,3.4l-1.4,5.4l3,0.8l-0.3,1.1l-3-0.8l-1.8,6.8l-1.3-0.4L89,1.9l4.8,1.3l-0.3,1.1L90,3.4z"/>
+                            <path id="Path_51" class="svg-1" d="M101.3,5.8c1.7,0.7,2.1,2.4,1.1,4.8l-2.9,6.8c-1,2.4-2.5,3.2-4.2,2.5s-2.1-2.4-1.1-4.8l2.9-6.8
+                                C98.1,5.9,99.6,5.1,101.3,5.8z M100.9,6.8c-0.9-0.4-1.7,0.1-2.4,1.7l-3.2,7.4c-0.7,1.5-0.5,2.5,0.4,2.9s1.7-0.1,2.4-1.7l3.2-7.4
+                                C101.9,8.2,101.7,7.2,100.9,6.8L100.9,6.8z"/>
+                            <path id="Path_52" class="svg-1" d="M105.1,25.1l2.2-6.9c-0.2-0.1-0.4-0.2-0.5-0.3l-0.8-0.5l-3.8,5.9l-1.2-0.7l8-12.6l1.9,1.2
+                                c1.6,1,2.2,2.7,0.9,4.8l-0.5,0.7c-0.6,1.1-1.7,1.8-3,1.8l-2.3,7.3L105.1,25.1z M110.4,15.9l0.4-0.5c1-1.5,0.6-2.6-0.4-3.2
+                                l-0.7-0.4l-3,4.7l0.7,0.4C108.4,17.5,109.5,17.4,110.4,15.9L110.4,15.9z"/>
+                            <path id="Path_53" class="svg-1" d="M123.5,21l0.8,0.8l-4.3,7.4l7.8-3.6l0.8,0.9l-11,10l-0.9-0.9l8.2-7.5l-6.2,2.8l-0.5-0.5
+                                l3.4-5.9l-8.2,7.5l-0.9-0.9L123.5,21z"/>
+                            <path id="Path_54" class="svg-1" d="M133.9,33.8c1,1.6,0.4,3.2-1.8,4.6l-6.3,3.9c-2.2,1.4-3.9,1.2-4.9-0.3s-0.4-3.2,1.8-4.6
+                                l6.3-3.9C131.3,32.1,132.9,32.3,133.9,33.8z M133,34.4c-0.5-0.8-1.5-0.9-2.9,0l-6.9,4.3c-1.4,0.9-1.8,1.8-1.3,2.6s1.5,0.9,2.9,0
+                                l6.9-4.3C133.1,36.1,133.5,35.3,133,34.4z"/>
+                            <path id="Path_55" class="svg-1" d="M126.2,51.9l5.8-4.4c-0.1-0.2-0.2-0.4-0.3-0.5l-0.4-0.9l-6.4,2.7l-0.5-1.3l13.7-5.8l0.9,2.1
+                                c0.7,1.8,0.3,3.5-1.9,4.5l-0.8,0.3c-1.1,0.6-2.4,0.5-3.5-0.2l-6,4.8L126.2,51.9z M135.8,47.3l0.6-0.3c1.6-0.7,1.9-1.8,1.5-2.9
+                                l-0.3-0.7l-5.2,2.2l0.3,0.7C133.1,47.5,134.1,48,135.8,47.3L135.8,47.3z"/>
+                            <path id="Path_56" class="svg-1" d="M141.3,54l-5.5,1.4l0.8,3l-1.1,0.3l-0.8-3l-5.7,1.4l0.9,3.4l-1.1,0.3l-1.2-4.7l14.4-3.7
+                                l1.2,4.7l-1.1,0.3L141.3,54z"/>
+                            <path id="Path_57" class="svg-1" d="M145,71.6c0,2-1.4,3.2-4,3.3l-0.7-2l1.1,0c1.3,0,1.9-0.4,1.8-1.2c0-0.7-0.6-1.2-1.7-1.2
+                                c-3.4,0.1-4.3,4.4-8.3,4.5c-2.2,0-3.6-1-3.6-3.1c0-2.1,1.4-3.2,4-3.3l0.7,2l-1.1,0c-1.3,0-1.9,0.4-1.8,1.2c0,0.7,0.6,1.1,1.7,1.1
+                                c3.3-0.1,4.2-4.4,8.4-4.5C143.5,68.4,145,69.6,145,71.6z"/>
+                            <path id="Path_58" class="svg-1" d="M144.2,83.5c-0.3,2.1-1.9,2.9-4.4,2.6l-0.3-2.1l1.1,0.2c1.3,0.2,1.9-0.1,2-0.9
+                                s-0.4-1.2-1.7-1.4l-8.2-1.2c-1.3-0.2-1.9,0.1-2,0.9s0.4,1.2,1.7,1.4l1.1,0.2l-0.9,1.9c-2.6-0.4-3.8-1.7-3.5-3.8
+                                c0.3-2,1.8-2.9,4.5-2.5l7.1,1.1C143.3,80.2,144.5,81.5,144.2,83.5z"/>
+                            <path id="Path_59" class="svg-1" d="M126.5,91.9l6.9,0.4l0.1-0.3l0.3-0.8l-6.4-2.1l0.6-1.9l14.2,4.6l-0.9,2.7
+                                c-0.4,1.7-2.1,2.8-3.9,2.4c-0.2,0-0.4-0.1-0.6-0.2l-1-0.3c-1.2-0.3-2.1-1.2-2.4-2.3l-7.5-0.3L126.5,91.9z M136.6,94.6l0.7,0.2
+                                c1.4,0.5,2.2,0,2.5-1l0.2-0.6l-4.7-1.5l-0.2,0.6C134.9,93.3,135.2,94.2,136.6,94.6L136.6,94.6z"/>
+                            <path id="Path_60" class="svg-1" d="M136.7,106.1c-0.9,1.8-2.6,2.2-5.1,0.9l-6.4-3.3c-2.5-1.3-3.1-2.9-2.1-4.7s2.6-2.2,5.1-0.9
+                                l6.4,3.3C137,102.7,137.6,104.3,136.7,106.1z M135.3,105.3c0.3-0.7,0-1.3-1.1-1.9l-7.3-3.9c-1.1-0.6-1.8-0.5-2.2,0.2
+                                s0,1.3,1.1,1.9l7.3,3.9C134.2,106.1,134.9,106,135.3,105.3L135.3,105.3z"/>
+                            <path id="Path_61" class="svg-1" d="M131.9,113.7l-1.2,1.6l-10.6-7.9l-2.1,2.8l-1.3-1l3.3-4.4L131.9,113.7z"/>
+                            <path id="Path_62" class="svg-1" d="M125.3,121.8l-1.4,1.4l-9.4-9.4l-2.5,2.5l-1.2-1.2l3.9-3.9L125.3,121.8z"/>
+                            <path id="Path_63" class="svg-1" d="M104.9,131.8l-2.9-4.7c-1.6-2.7-1.3-4.7,0.9-6.1l1.9-1.2l7.8,12.7l-1.9,1.2
+                                C108.6,135.1,106.6,134.5,104.9,131.8z M107.1,131.5c0.8,1.3,1.7,1.6,2.7,1l0.3-0.2l-6-9.9l-0.3,0.2c-1,0.6-1.2,1.5-0.4,2.9
+                                L107.1,131.5z"/>
+                            <path id="Path_64" class="svg-1" d="M99.4,139.8c-1.9,0.7-3.4,0-4.5-2.6l-2.7-6.7c-1-2.6-0.4-4.2,1.4-5s3.4,0,4.5,2.6l2.7,6.7
+                                C101.8,137.4,101.2,139,99.4,139.8z M98.8,138.2c0.7-0.3,0.9-1,0.4-2.2l-3.1-7.7c-0.5-1.2-1.1-1.6-1.8-1.3s-0.9,1-0.4,2.2
+                                l3.1,7.7C97.5,138.1,98.1,138.5,98.8,138.2z"/>
+                            <path id="Path_65" class="svg-1" d="M90.9,142.6l-2,0.4c-0.9-3.6-2.4-9.1-3.4-12.8l-0.2,0c0.4,4.4,1,10.1,1.2,13.2l-2.2,0.4
+                                c-0.8-3-2.3-8.6-3.5-12.8l-0.2,0c0.4,3.9,0.9,9.5,1.3,13.2l-2,0.4c-0.5-5-0.9-10.6-1.1-14.9l2.9-0.5c0.9,3.2,2,7.1,3.2,12.5
+                                l0.1,0c-0.7-5.5-1-9.5-1.3-12.9l2.9-0.5C88.1,132.3,89.6,137.7,90.9,142.6z"/>
+                            <path id="Path_66" class="svg-1" d="M74.2,144.8l-1.6,0l-2.7-10.1l-0.2,10.1l-1.9,0l0.3-14.9l1.9,0l2.5,8.4l0.2-8.3l1.9,0
+                                L74.2,144.8z"/>
+                            <path id="Path_67" class="svg-1" d="M54.1,140.7l1.3-4.7l-2.6-0.7l0.4-1.6l2.6,0.7l1.8-6.5l1.9,0.5l-3.9,14.4l-5-1.4l0.4-1.6
+                                L54.1,140.7z"/>
+                            <path id="Path_68" class="svg-1" d="M42.8,138.6c-1.8-0.8-2.4-2.5-1.2-5l2.9-6.5c1.1-2.5,2.7-3.2,4.6-2.4s2.4,2.5,1.2,5l-2.9,6.5
+                                C46.2,138.7,44.6,139.4,42.8,138.6z M43.5,137.1c0.7,0.3,1.3-0.1,1.8-1.2l3.4-7.6c0.5-1.2,0.4-1.9-0.3-2.2s-1.3,0.1-1.8,1.2
+                                l-3.4,7.6C42.6,136.1,42.8,136.8,43.5,137.1L43.5,137.1z"/>
+                            <path id="Path_69" class="svg-1" d="M39,119.1l-2.3,6.6l0.3,0.2l0.7,0.5l3.7-5.6l1.7,1.1l-8.3,12.4l-2.3-1.6
+                                c-1.6-0.9-2.1-2.8-1.3-4.4c0.1-0.2,0.2-0.4,0.4-0.5l0.6-0.9c0.6-1,1.7-1.7,2.9-1.7l2.4-7.2L39,119.1z M33.7,128.1l-0.4,0.6
+                                c-0.8,1.2-0.6,2.1,0.3,2.7l0.5,0.3l2.7-4.1l-0.5-0.3C35.4,126.8,34.5,126.9,33.7,128.1L33.7,128.1z"/>
+                            <path id="Path_70" class="svg-1" d="M20.2,122.6l-1.1-1.3l4.4-7l-7.6,3.3l-1.1-1.3l11.3-9.7l1.2,1.4l-7.2,6.2l5.4-2.3l0.7,0.8
+                                l-3.1,5l7.2-6.2l1.2,1.4L20.2,122.6z"/>
+                            <path id="Path_71" class="svg-1" d="M9.5,108.6c-1-1.7-0.5-3.4,2-4.8l6.2-3.6c2.4-1.4,4.1-1,5.1,0.7s0.5,3.4-2,4.8l-6.2,3.6
+                                C12.3,110.7,10.5,110.3,9.5,108.6z M11,107.7c0.4,0.6,1.1,0.7,2.2,0.1l7.2-4.1c1.1-0.6,1.4-1.3,1-1.9s-1.1-0.7-2.2-0.1l-7.2,4.1
+                                C10.9,106.4,10.6,107.1,11,107.7L11,107.7z"/>
+                            <path id="Path_72" class="svg-1" d="M17.9,90.6l-5.7,4l0.1,0.3l0.3,0.8l6.3-2.3l0.7,1.9l-14,5.2l-1-2.6c-0.8-1.6-0.1-3.6,1.5-4.3
+                                c0.2-0.1,0.4-0.2,0.6-0.2l1-0.4c1.1-0.5,2.4-0.4,3.3,0.3l6.1-4.4L17.9,90.6z M8.3,94.7L7.6,95c-1.4,0.5-1.7,1.4-1.3,2.3l0.2,0.6
+                                l4.6-1.7l-0.2-0.6C10.5,94.6,9.7,94.2,8.3,94.7L8.3,94.7z"/>
+                            <path id="Path_73" class="svg-1" d="M3.2,86.6l4.8-1L7.5,83l1.6-0.3l0.5,2.6l5-1L14,81.2l1.6-0.3l1,5L2,88.9l-1-5l1.6-0.3L3.2,86.6
+                                z"/>
+                        </g>
+                    </g>
+                    <circle id="Ellipse_8" class="svg-2" cx="-374.9" cy="-374.8" r="47.3"/>
+                </g>
+            </svg>
         </a>
-        
       </div>
     </section>
 
@@ -55,10 +152,14 @@
         <p>
           Recently, we have animated many famous<br />
           characters for projects like <span class="tooltip-wrapper ttw-1">Space Jam a New<br />
-          Legacy<span class="tooltip"><img src="./assets/image/more-work-1.jpg" alt=""></span></span>, <span class="tooltip-wrapper ttw-2">Looney Tunes<span class="tooltip"><img src="./assets/image/more-work-2.jpg" alt=""></span></span>, <span class="tooltip-wrapper ttw-3">Green Eggs and Ham<span class="tooltip"><img src="./assets/image/more-work-3.jpg" alt=""></span></span>,<br /> 
-          <span class="tooltip-wrapper ttw-4">Animaniacs<span class="tooltip"><img src="./assets/image/more-work-4.jpg" alt=""></span></span><span class="tooltip-wrapper ttw-5"> and Central Park.<span class="tooltip"><img src="./assets/image/more-work-1.jpg" alt=""></span></span></p>
-          <p> We love quality service work and we bring our<br />
-          passion for animation to our original IP's too.</p>
+          Legacy<span class="tooltip"><img src="./assets/image/more-work-1.jpg" alt=""></span></span>,
+          <span class="tooltip-wrapper ttw-2">Looney Tunes<span class="tooltip"><img src="./assets/image/more-work-2.jpg" alt=""></span></span>,
+          <span class="tooltip-wrapper ttw-3">Green Eggs and Ham<span class="tooltip"><img src="./assets/image/more-work-3.jpg" alt=""></span></span>,<br /> 
+          <span class="tooltip-wrapper ttw-4">Animaniacs<span class="tooltip"><img src="./assets/image/more-work-4.jpg" alt=""></span></span>
+          <span class="tooltip-wrapper ttw-5"> and Central Park.<span class="tooltip"><img src="./assets/image/more-work-1.jpg" alt=""></span></span>
+        </p>
+        <p> We love quality service work and we bring our<br />
+        passion for animation to our original IP's too.</p>
 
         <h2>
             WE <span class="prata">are</span><br>
@@ -72,17 +173,12 @@
         </div>
       </div>
       <div class="video-section">
-        
-          
-            <div class="container">
-           
-                <video  class="video" id="myVideo" poster="./assets/image/video-thumb.jpg" controls>
-                    <source src="assets/video/hero.mp4" type="video/mp4">
-                </video>
-              </div>
-              <img class="play" src="./assets/image/play.svg" alt="">
-          
-            
+        <div class="container">
+            <video  preload="none" class="video" id="myVideo" poster="./assets/image/video-thumb2.jpg" controls>
+                <source src="assets/video/about.mp4" type="video/mp4">
+            </video>
+            <img class="play" src="./assets/image/play.svg" alt="">
+        </div>
           </div>
           
          
