@@ -27,13 +27,13 @@
 
   <body>
     <!-- Hero -->
-    <!-- TODO Switch image for video and add opacity gradient-->
     <section class="bg-black hero-section">
       <div class="logo"><img src="./assets/image/logo.png" alt="" /></div>
-      <img class="bg-video" src="/assets/image/hero.png" alt="" />
-      <!-- <video  class="bg-video" autoplay muted loop id="myVideo">
-            <source src="rain.mp4" type="video/mp4">
-          </video> -->
+      
+      <video  class="bg-video" autoplay muted loop id="myVideo">
+            <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <div class="bg-video-vignette"></div>
       <div class="flex-column-center">
         <h1 class="w-100">
           <span class="d-block text-outline-green">DISCOVER</span
@@ -72,11 +72,13 @@
         </div>
       </div>
       <div class="video-section">
-          <!-- TODO Replace image for video -->
+        
           
             <div class="container">
-                <img class="video"src="./assets/image/video-thumb.jpg" alt="">
-               
+           
+                <video  class="video" id="myVideo" poster="./assets/image/video-thumb.jpg" controls>
+                    <source src="assets/video/hero.mp4" type="video/mp4">
+                </video>
               </div>
               <img class="play" src="./assets/image/play.svg" alt="">
           

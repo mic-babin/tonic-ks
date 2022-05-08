@@ -29,6 +29,16 @@
   z-index: 0;
 }
 
+.bg-video-vignette {
+  position: absolute;
+  top: -140px;
+  right: 0;
+  height: 1140px;
+  width: 1140px;
+  z-index: 0;
+  background: radial-gradient(circle, transparent 0%, black 60%);
+}
+
 h1 {
   padding-top: 250px;
   color: white;
@@ -39,7 +49,7 @@ h1 {
 .scroll-down {
   height: 145px;
   width: 145px;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
 }
 
