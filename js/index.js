@@ -1,4 +1,6 @@
 let about = document.querySelector("#about");
+let play = document.querySelector(".play");
+let video = document.querySelector(".video");
 
 // Move images
 let imgOptions = {
@@ -33,4 +35,12 @@ function imgMove(e) {
     tooltip.style.top = e.clientY + 10 + "px";
     tooltip.style.left = e.clientX + 10 + "px";
   });
+}
+
+// Start video
+play.addEventListener("click", playVideo);
+
+function playVideo() {
+  play.style.display = "none";
+  video.play();
 }
