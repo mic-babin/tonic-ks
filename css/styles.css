@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-@import 'reset.css';
-@import 'variable.css';
-@import 'utilities.css';
-@import 'animations.css';
-@import 'responsive.css';
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import "reset.css";
+@import "variable.css";
+@import "utilities.css";
+@import "animations.css";
+@import "responsive.css";
 
 /* ======= Hero ======= */
 :root {
@@ -195,7 +195,7 @@ img {
 .show-work-section {
   position: relative;
   overflow: hidden;
-  padding: 200px 0;
+  padding: 650px 0;
   background-image: url(../assets/image/gradiant-1.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@ img {
 .thumb {
   overflow: hidden;
   width: 35vw;
-  max-width: 450px;
+  max-width: 325px;
   min-width: 300px;
   position: absolute;
   z-index: -1;
@@ -269,44 +269,52 @@ img {
 }
 
 .scroll {
-z-index: 111;
+  z-index: 111;
 }
 
-#scroll1, #scroll1Clone,
-#scroll2, #scroll2Clone,
-#scroll3, #scroll3Clone,
-#scroll4, #scroll4Clone {
+#scroll1,
+#scroll1Clone,
+#scroll2,
+#scroll2Clone,
+#scroll3,
+#scroll3Clone,
+#scroll4,
+#scroll4Clone {
   font-size: 100px;
 }
 
-#scroll1, #scroll1Clone {
+#scroll1,
+#scroll1Clone {
   position: absolute;
-  transform: translate(150px, 100px);
+  transform: translate(150px, -400px);
   width: fit-content;
   opacity: 0;
   transition: opacity 1500ms ease-in-out;
   transition-delay: 500ms;
 }
-#scroll2, #scroll2Clone {
+#scroll2,
+#scroll2Clone {
   position: absolute;
-  transform: translate(1150px, 300px);
+  transform: translate(1150px, -250px);
   width: fit-content;
   opacity: 0;
   transition: opacity 1500ms ease-in-out;
   transition-delay: 1000ms;
 }
 
-#scroll3, #scroll3Clone {
+#scroll3,
+#scroll3Clone {
   position: absolute;
-  transform: translate(-400px, 500px);
+  transform: translate(-400px, 200px);
   width: fit-content;
   opacity: 0;
   transition: opacity 1500ms ease-in-out;
   transition-delay: 1500ms;
 }
-#scroll4, #scroll4Clone {
+#scroll4,
+#scroll4Clone {
   position: absolute;
-  transform: translate(800px, 700px);
+  transform: translate(800px, 400px);
   width: fit-content;
   opacity: 0;
   transition: opacity 1500ms ease-in-out;
