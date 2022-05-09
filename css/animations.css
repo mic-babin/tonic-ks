@@ -44,3 +44,19 @@
   opacity: 1;
   transition: opacity 0.2s ease-in;
 }
+
+/* loader */
+
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222423;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 1;
+  transition: all 0.3s;
+}

@@ -1,4 +1,7 @@
 let about = document.querySelector("#about");
+let play = document.querySelector(".play");
+let video = document.querySelector(".video");
+let loader = document.querySelector(".loader");
 
 // Move images
 let imgOptions = {
@@ -34,3 +37,25 @@ function imgMove(e) {
     tooltip.style.left = e.clientX + 10 + "px";
   });
 }
+
+// Start video
+play.addEventListener("click", playVideo);
+
+function playVideo() {
+  play.style.display = "none";
+  video.play();
+}
+
+// Clear loader
+document.addEventListener("readystatechange", (event) => {
+  const readyState = "complete";
+
+  if (document.readyState == readyState) {
+    setTimeout(() => {
+      loader.style.opacity = 0;
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 300);
+    }, 300);
+  }
+});
